@@ -9,7 +9,8 @@ hubert_base.pt
 *.pth
 *.index
 *.xlsx
-
+!/temp/favourites.xlsx
+!/temp/voices.xlsx
 
 # C extensions
 *.so
