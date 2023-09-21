@@ -2,7 +2,9 @@ streamlit
 pandas
 srt
 openpyxl
-openai-whisper
 natsort
 gtts
 langdetect
+pydub
+soundfile
+librosa
