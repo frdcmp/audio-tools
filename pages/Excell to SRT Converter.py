@@ -13,13 +13,11 @@ if xlsx_file:
     xlsx_file_name = os.path.splitext(xlsx_file.name)[0]
 
     # Read the XLSX file with the first row as headers
-    df = pd.read_excel(xlsx_file, header=None)
+    df = pd.read_excel(xlsx_file)
 
-    # Combine all columns into a single 'Text' column
-    df['Text'] = df.apply(lambda row: ' '.join(map(str, row)), axis=1)
-
-    # Drop the original columns
-    df = df[['Text']]
+    # Display the DataFrame
+    st.write("DataFrame from XLSX file:")
+    st.dataframe(df)
 
     # Initialize an empty list for SRT subtitles
     srt_subtitles = []

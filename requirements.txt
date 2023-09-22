@@ -8,3 +8,6 @@ langdetect
 pydub
 soundfile
 librosa
+webvtt-py
+matplotlib
+openai-whisper
